@@ -7,9 +7,13 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class Request {
-    public String obterDados() {
+    public String getData() {
+        // Change these variables to your location. To check your coordinates search in https://open-meteo.com/en/docs
+        double latitude = -15.7797;
+        double longitude = -47.9297;
+
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://api.open-meteo.com/v1/forecast?latitude=-22.5647&longitude=-47.4017&daily=precipitation_probability_mean&daily=apparent_temperature_mean")).build();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://api.open-meteo.com/v1/forecast?latitude="+ latitude + "&longitude="+ longitude +"&daily=precipitation_probability_mean&daily=apparent_temperature_mean")).build();
         HttpResponse<String> response = null;
 
         try {

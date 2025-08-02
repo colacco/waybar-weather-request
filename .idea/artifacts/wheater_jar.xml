@@ -2,7 +2,7 @@
   <artifact type="jar" name="wheater:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/wheater_jar</output-path>
     <root id="archive" name="wheater.jar">
-      <element id="module-output" name="wheater" />
+      <element id="module-output" name="weather" />
       <element id="extracted-dir" path="$PROJECT_DIR$/jackson-core-2.19.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/jackson-databind-2.19.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/jackson-annotations-3.0-rc5.jar" path-in-jar="/" />
