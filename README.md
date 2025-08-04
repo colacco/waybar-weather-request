@@ -20,7 +20,7 @@ By default, the program uses the coordinates for Brasília, the capital of Brazi
 First, create a '.jar' file form project. Then, you can run the program using a simple shell script:
 ```
 #!/bin/bash
-java -jar ~/.config/waybar/apps/wheater.jar
+java -jar ~/.config/waybar/apps/weather.jar
 ```
 
 ### 3. Waybar Configuration
